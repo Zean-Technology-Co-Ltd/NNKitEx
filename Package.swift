@@ -17,11 +17,9 @@ let package = Package(
             targets: ["NNKitEx"]),
     ],
     dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        // .package(url: /* package url */, from: "1.0.0"),
         .package(url: "https://github.com/SDWebImage/SDWebImage.git", .upToNextMajor(from: "5.17.0")),
-        .package(url: "https://github.com/ReactiveX/RxSwift.git", .upToNextMajor(from: "6.5.0")),
-        .package(url: "https://github.com/Zean-Technology-Co-Ltd/FoundationEx.git", from: "1.0.0"),
+        .package(url: "https://github.com/ReactiveX/RxSwift.git", exact: "6.2.0"),
+        .package(url: "https://github.com/Zean-Technology-Co-Ltd/FoundationEx.git", .upToNextMajor(from: "1.0.0")),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.

@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Zean-Technology-Co-Ltd/FoundationEx.git",
       "state" : {
-        "revision" : "0bfd901f3ed1b82ba0552d7b47282154b99b1feb",
-        "version" : "1.0.0"
+        "revision" : "d0b2de579a947ec5901f0dbc226c2155effbba45",
+        "version" : "1.0.3"
       }
     },
     {
@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ReactiveX/RxSwift.git",
       "state" : {
-        "revision" : "9dcaa4b333db437b0fbfaf453fad29069044a8b4",
-        "version" : "6.6.0"
+        "revision" : "7c17a6ccca06b5c107cfa4284e634562ddaf5951",
+        "version" : "6.2.0"
       }
     },
     {
