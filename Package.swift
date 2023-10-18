@@ -20,7 +20,8 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
         .package(url: "https://github.com/SDWebImage/SDWebImage.git", .upToNextMajor(from: "5.17.0")),
-        .package(url: "https://github.com/ReactiveX/RxSwift.git", .upToNextMajor(from: "6.5.0"))
+        .package(url: "https://github.com/ReactiveX/RxSwift.git", .upToNextMajor(from: "6.5.0")),
+        .package(url: "https://github.com/Zean-Technology-Co-Ltd/FoundationEx.git", from: "1.0.0"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -33,12 +34,12 @@ let package = Package(
               .product(name: "RxCocoa", package: "RxSwift"),
               "FoundationEx"
             ]),
-        .target(
-          name: "FoundationEx",
-          dependencies: [
-            "RxSwift",
-            .product(name: "RxCocoa", package: "RxSwift")
-          ]),
+//        .target(
+//          name: "FoundationEx",
+//          dependencies: [
+//            "RxSwift",
+//            .product(name: "RxCocoa", package: "RxSwift")
+//          ]),
         .testTarget(
             name: "NNKitExTests",
             dependencies: ["NNKitEx"]),

@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "foundationex",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Zean-Technology-Co-Ltd/FoundationEx.git",
+      "state" : {
+        "revision" : "0bfd901f3ed1b82ba0552d7b47282154b99b1feb",
+        "version" : "1.0.0"
+      }
+    },
+    {
       "identity" : "rxswift",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ReactiveX/RxSwift.git",
