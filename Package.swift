@@ -18,7 +18,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/SDWebImage/SDWebImage.git", .upToNextMajor(from: "5.17.0")),
-        .package(url: "https://github.com/ReactiveX/RxSwift.git", exact: "6.2.0"),
+        .package(url: "https://github.com/ReactiveX/RxSwift.git", .upToNextMajor(from: "6.2.0")),
         .package(url: "https://github.com/Zean-Technology-Co-Ltd/FoundationEx.git", .upToNextMajor(from: "1.0.0")),
     ],
     targets: [
@@ -40,6 +40,9 @@ let package = Package(
 //          ]),
         .testTarget(
             name: "NNKitExTests",
-            dependencies: ["NNKitEx"]),
+            dependencies: [
+                "NNKitEx",
+                .product(name: "RxTest", package: "RxSwift"),
+            ]),
     ]
 )
